@@ -1,25 +1,14 @@
 async function runWorkspace(){
 
-let prompt =
-document.getElementById(
-"workspacePrompt"
-).value;
+let prompt = document.getElementById("workspacePrompt").value;
 
-let result =
-await askAI(prompt);
+if(!prompt) return;
 
-document.getElementById(
-"workspaceOutput"
-).innerHTML =
-result;
+let result = await askAI(prompt);
 
-saveChat(
-prompt,
-result
-);
+document.getElementById("workspaceOutput").innerHTML = result;
 
-increaseStat(
-"chat"
-);
+saveChat(prompt, result);
+increaseStat("chat");
 
 }
