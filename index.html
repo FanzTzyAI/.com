@@ -7,52 +7,128 @@
 
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>FanzTzy AI</h1>
-    <p>Smart AI For Everyone</p>
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="logo">
+<img src="assets/logo.png" alt="logo">
+<span>FanzTzy AI</span>
+</div>
+
+<div class="nav-menu">
+<a href="pages/dashboard.html">Dashboard</a>
+<a href="pages/profile.html">Profile</a>
+<a href="pages/settings.html">Settings</a>
+
+<button onclick="toggleTheme()">🌙</button>
+</div>
+
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+
+<div class="hero-bg">
+<img src="assets/banner.jpg" alt="banner">
+</div>
+
+<h1>FanzTzy AI</h1>
+<p>Smart AI Assistant • Creator • Football • Study • Crypto</p>
+
+<div class="hero-btn">
+<a href="pages/chat.html" class="btn">🚀 Start AI</a>
+<a href="pages/workspace.html" class="btn-outline">⚡ Workspace</a>
+</div>
+
 </header>
 
-<div class="container">
+<!-- MENU GRID -->
+<section class="menu">
 
-<a href="pages/chat.html" class="card">
-🤖 AI Assistant
-</a>
+<h2>🔥 AI Features</h2>
 
-<a href="pages/football.html" class="card">
-⚽ Football AI
-</a>
+<div class="grid">
 
-<a href="pages/creator.html" class="card">
-🎬 Creator Studio
-</a>
+<div class="card">
+<img src="assets/icons/chat.png">
+<h3>Chat AI</h3>
+<p>AI Assistant pintar</p>
+</div>
 
-<a href="pages/study.html" class="card">
-📚 Study AI
-</a>
+<div class="card">
+<img src="assets/icons/football.png">
+<h3>Football AI</h3>
+<p>Prediksi & statistik bola</p>
+</div>
 
-<a href="pages/games.html" class="card">
-🎮 AI Games
-</a>
+<div class="card">
+<img src="assets/icons/creator.png">
+<h3>Creator AI</h3>
+<p>Caption, script, ide konten</p>
+</div>
 
-<a href="pages/crypto.html" class="card">
-💰 Crypto AI
-</a>
+<div class="card">
+<img src="assets/icons/study.png">
+<h3>Study AI</h3>
+<p>Belajar lebih mudah</p>
+</div>
 
-<a href="pages/voice.html" class="card">
-🎤 Voice AI
-</a>
+<div class="card">
+<img src="assets/icons/crypto.png">
+<h3>Crypto AI</h3>
+<p>Analisis market</p>
+</div>
 
-<a href="pages/vision.html" class="card">
-📷 Vision AI
-</a>
+<div class="card">
+<img src="assets/icons/games.png">
+<h3>Games AI</h3>
+<p>Game & kuis AI</p>
+</div>
 
 </div>
 
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+<h2>📊 Statistik</h2>
+
+<div class="stats-grid">
+
+<div class="box">
+<h3 id="chatCount">0</h3>
+<p>Chat</p>
+</div>
+
+<div class="box">
+<h3 id="creatorCount">0</h3>
+<p>Creator</p>
+</div>
+
+<div class="box">
+<h3 id="achievementCount">0</h3>
+<p>Achievement</p>
+</div>
+
+<div class="box">
+<h3>60+</h3>
+<p>Features</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-© 2026 FanzTzy AI | Version 1.0
+<p>© 2026 FanzTzy AI</p>
 </footer>
 
+<script src="js/theme.js"></script>
+
 </body>
-  </html>
+    </html>
