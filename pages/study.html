@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study AI</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+<h1>📚 Study AI</h1>
+<p>Belajar lebih cepat dengan AI</p>
+</header>
+
+<div class="container">
+
+<div class="card" onclick="summarizeText()">
+📄 Ringkasan Materi
+</div>
+
+<div class="card" onclick="generateQuestion()">
+🎓 Pembuat Soal
+</div>
+
+<div class="card" onclick="generateAnswer()">
+📝 Pembuat Jawaban
+</div>
+
+<div class="card" onclick="translator()">
+🌍 Penerjemah
+</div>
+
+<div class="card" onclick="smartCalculator()">
+🧮 Kalkulator AI
+</div>
+
+<div class="card" onclick="flashcardGenerator()">
+🃏 Flashcard
+</div>
+
+</div>
+
+<div id="studyOutput"></div>
+
+<script src="../api/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/study.js"></script>
+
+</body>
+</html>
