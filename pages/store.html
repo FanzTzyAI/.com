@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>AI Store</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="page-header">
+<h1>📂 AI Store</h1>
+</div>
+
+<div class="page-content">
+
+<select id="category">
+<option value="artikel">📄 Artikel</option>
+<option value="football">⚽ Football</option>
+<option value="creator">🎬 Creator</option>
+<option value="study">📚 Study</option>
+<option value="kode">💻 Kode</option>
+<option value="favorit">⭐ Favorit</option>
+</select>
+
+<textarea id="storeData" placeholder="Hasil AI..."></textarea>
+
+<button onclick="saveToStore(
+document.getElementById('category').value,
+document.getElementById('storeData').value
+)">
+Simpan</button>
+
+<div id="storeOutput"></div>
+
+</div>
+
+<script src="../js/store.js"></script>
+<script>loadStore()</script>
+
+</body>
+</html>
