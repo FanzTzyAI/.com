@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Riwayat Chat</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>🧠 Riwayat Chat</h1>
+
+<input
+type="text"
+id="searchHistory"
+placeholder="Cari Riwayat..."
+onkeyup="searchHistory()">
+
+<div id="historyOutput"></div>
+
+<button onclick="clearHistory()">
+🗑 Hapus Semua
+</button>
+
+<script src="../js/memory.js"></script>
+
+<script>
+loadHistory();
+</script>
+
+</body>
+  </html>
