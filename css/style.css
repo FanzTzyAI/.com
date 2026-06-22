@@ -1,249 +1,161 @@
 /* RESET */
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial;
 }
 
+/* BODY */
 body{
 background:#0f172a;
 color:white;
-min-height:100vh;
 }
 
 /* NAVBAR */
-
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 30px;
 background:#111827;
-border-bottom:1px solid #1f2937;
 position:sticky;
 top:0;
-z-index:1000;
+z-index:100;
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:10px;
-font-size:22px;
-font-weight:bold;
 }
 
 .logo img{
 width:40px;
 height:40px;
-border-radius:50%;
+border-radius:10px;
 }
 
-.nav-right{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.nav-right a{
+.nav-menu a{
 color:white;
+margin:0 10px;
 text-decoration:none;
 }
 
-.nav-right button{
+.nav-menu button{
 background:#2563eb;
 border:none;
-color:white;
 padding:8px 12px;
+color:white;
 border-radius:8px;
 cursor:pointer;
 }
 
 /* HERO */
-
 .hero{
 text-align:center;
-padding:80px 20px;
-background:
-linear-gradient(
-135deg,
-#1e293b,
-#0f172a
-);
+padding:60px 20px;
+position:relative;
+}
+
+.hero-bg img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+opacity:0.4;
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:15px;
+font-size:50px;
+margin-top:20px;
 }
 
 .hero p{
-font-size:20px;
 color:#94a3b8;
-margin-bottom:30px;
+margin:10px 0;
 }
 
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
+.hero-btn{
+margin-top:20px;
 }
 
-.btn-primary{
+.btn{
 background:#2563eb;
+padding:12px 20px;
+border-radius:10px;
 color:white;
-padding:15px 25px;
-border-radius:12px;
 text-decoration:none;
-font-weight:bold;
+margin:5px;
+display:inline-block;
 }
 
-.btn-secondary{
-background:#1f2937;
+.btn-outline{
+border:1px solid #2563eb;
+padding:12px 20px;
+border-radius:10px;
 color:white;
-padding:15px 25px;
-border-radius:12px;
 text-decoration:none;
-font-weight:bold;
 }
 
-/* SECTION */
-
-section{
-padding:50px 20px;
-max-width:1300px;
-margin:auto;
+/* MENU */
+.menu{
+padding:40px 20px;
+text-align:center;
 }
-
-section h2{
-margin-bottom:25px;
-font-size:30px;
-}
-
-/* GRID */
 
 .grid{
 display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-top:20px;
 }
 
-/* CARD */
-
 .card{
-background:#111827;
-border:1px solid #1f2937;
-border-radius:20px;
-padding:25px;
-text-decoration:none;
-color:white;
+background:#1f2937;
+padding:20px;
+border-radius:15px;
 transition:0.3s;
-display:block;
 }
 
 .card:hover{
-transform:translateY(-5px);
-border-color:#2563eb;
-box-shadow:
-0 0 20px rgba(37,99,235,.3);
+transform:scale(1.05);
+background:#2563eb;
 }
 
-.card h3{
-margin-top:10px;
-margin-bottom:10px;
-}
-
-.card p{
-color:#94a3b8;
+.card img{
+width:50px;
+height:50px;
 }
 
 /* STATS */
+.stats{
+padding:40px 20px;
+text-align:center;
+}
 
 .stats-grid{
 display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+margin-top:20px;
 }
 
-.stat-box{
-background:#111827;
-border-radius:20px;
-padding:25px;
-text-align:center;
-border:1px solid #1f2937;
+.box{
+background:#1f2937;
+padding:20px;
+border-radius:15px;
 }
 
-.stat-box h3{
-font-size:35px;
-margin-bottom:10px;
+.box h3{
+font-size:30px;
 color:#3b82f6;
 }
 
 /* FOOTER */
-
 footer{
-margin-top:40px;
-padding:30px;
 text-align:center;
+padding:20px;
 background:#111827;
-border-top:1px solid #1f2937;
-color:#94a3b8;
+margin-top:30px;
 }
-
-/* DARK MODE */
-
-.dark-mode{
-background:#ffffff;
-color:#111827;
-}
-
-.dark-mode .navbar,
-.dark-mode .card,
-.dark-mode .stat-box,
-.dark-mode footer{
-background:#f8fafc;
-color:#111827;
-}
-
-.dark-mode .card p{
-color:#475569;
-}
-
-/* SCROLLBAR */
-
-::-webkit-scrollbar{
-width:8px;
-}
-
-::-webkit-scrollbar-track{
-background:#0f172a;
-}
-
-::-webkit-scrollbar-thumb{
-background:#2563eb;
-border-radius:20px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:40px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-.navbar{
-flex-direction:column;
-gap:15px;
-}
-
-  }
